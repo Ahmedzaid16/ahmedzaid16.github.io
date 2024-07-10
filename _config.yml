@@ -3,8 +3,7 @@ description: "Satellite - jekyll blog theme"
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
 remote_theme: pages-themes/minimal@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+
 # Social Links
 email: example@gmail.com
 github_username: github
@@ -31,7 +30,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-loading-lazy
-
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 exclude:
   - docs/
 
