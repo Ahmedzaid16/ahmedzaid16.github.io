@@ -2,7 +2,7 @@ title: example.com
 description: "Satellite - jekyll blog theme"
 logo_img: "/assets/img/favicon.webp"
 profile_img: "/assets/img/profile.webp"
-
+theme: jekyll-theme-minimal
 # Social Links
 email: example@gmail.com
 github_username: github
