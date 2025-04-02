@@ -319,21 +319,3 @@
 }
 
 }
-.tryhackme-badge {
-  margin-top: auto; /* Pushes to bottom of sidebar */
-  padding: 1rem;
-  text-align: center;
-}
-
-.tryhackme-badge img {
-  width: 100%;
-  max-width: 300px; /* Responsive clamp */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s; /* Optional hover effect */
-}
-
-.tryhackme-badge img:hover {
-  transform: scale(1.02); /* Subtle interaction */
-}
