@@ -321,7 +321,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensures full height */
-  position: sticky;
+  //position: sticky;
   top: 0;
 }
 
@@ -333,7 +333,7 @@
   background: var(--card-bg); /* Optional: match your theme */
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+  width: 90%;
   iframe {
     width: 100%;
     max-width: 300px; /* Prevents overflow */
