@@ -313,19 +313,34 @@
 @include mq(wide){
 
 .sidebar-left{ width:calc((100vw - #{$contentwd})/2); }
-.sidebar-right{
-  width:calc((100vw - #{$contentwd})/2);
-  margin-left:calc(#{$contentwd} + (100vw - #{$contentwd})/2);
+// .sidebar-right{
+//   width:calc((100vw - #{$contentwd})/2);
+//   margin-left:calc(#{$contentwd} + (100vw - #{$contentwd})/2);
+// }
+.sidebar-right {
+  width: calc((100vw - #{$contentwd}) / 2);
+  margin-left: calc(#{$contentwd} + (100vw - #{$contentwd}) / 2);
+  
+  /* New additions for badge positioning */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+  position: sticky;
+  top: 0;
 }
-
 }
 .tryhackme-badge {
-  margin: 20px 0;
+  margin-top: auto; /* Pushes badge to the bottom */
+  padding: 1rem;
   text-align: center;
-}
-
-.tryhackme-badge iframe {
-  max-width: 100%;
+  background: var(--card-bg); /* Optional: match your theme */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  iframe {
+    width: 100%;
+    max-width: 300px; /* Prevents overflow */
+    border: none;
+    border-radius: 6px;
+  }
 }
