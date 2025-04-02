@@ -313,9 +313,16 @@
 @include mq(wide){
 
 .sidebar-left{ width:calc((100vw - #{$contentwd})/2); }
-.sidebar-right{
-  width:calc((100vw - #{$contentwd})/2);
-  margin-left:calc(#{$contentwd} + (100vw - #{$contentwd})/2);
+.sidebar-right {
+  width: calc((100vw - #{$contentwd}) / 2);
+  margin-left: calc(#{$contentwd} + (100vw - #{$contentwd}) / 2);
+  
+  /* New additions for badge positioning */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+  position: sticky;
+  top: 0;
 }
 
 }
