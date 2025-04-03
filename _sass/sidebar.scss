@@ -313,30 +313,9 @@
 @include mq(wide){
 
 .sidebar-left{ width:calc((100vw - #{$contentwd})/2); }
-.sidebar-right {
-  width: calc((100vw - #{$contentwd}) / 2);
-  margin-left: calc(#{$contentwd} + (100vw - #{$contentwd}) / 2);
-  
-  /* New additions for badge positioning */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensures full height */
-  justify-content: flex-end;
-  top: 0;
+.sidebar-right{
+  width:calc((100vw - #{$contentwd})/2);
+  margin-left:calc(#{$contentwd} + (100vw - #{$contentwd})/2);
 }
 
-}
-.thm-badge-container {
-  //margin-top: auto;
-  padding: 1rem;
-  width: 100%; /* Your desired width */
-  // height: 200px; /* Your desired height */
-  overflow: hidden; /* Hides the scaled overflow */
-  border-radius: 8px;
-}
-
-.thm-badge-container iframe {
-  width: 100%; /* Original iframe width */
-  height: 100%; /* Original iframe height */
-  pointer-events: none; /* Optional: prevents interaction */
 }
