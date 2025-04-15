@@ -8,6 +8,9 @@ thumbnail: "/assets/img/thumbnail/Aibot.png"
 
 # AiBot
 ---
+**Challenges Difficulty: Medium**  
+**Category: Machines**
+
 ## WALKTHROUGH 
 This challenge is from Cybertalant 2025 ramadan nights CTF
 
