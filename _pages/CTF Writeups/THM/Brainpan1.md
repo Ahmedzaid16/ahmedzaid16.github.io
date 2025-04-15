@@ -11,12 +11,12 @@ thumbnail: "/assets/img/thumbnail/Brainpan1.png"
 **Challenges Difficulty: Hard**  
 **Category: Revers**
 
-## WALKTHROUGH 
+## Walkthrough 
 
 ---
 Stating with nmap to scan the machine we found a service called abyss on port 9999 a web server running on port 10000
 ![image.png](/assets/img/posts/Brainpan1/image%2012.png)
-Opening it returns a page that has noting interested 
+Opening it returns a page that has nothing interested 
 ![image.png](/assets/img/posts/Brainpan1/image%2013.png)
 let's use dirb to discover directories 
 
