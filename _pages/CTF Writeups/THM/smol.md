@@ -11,13 +11,8 @@ thumbnail: "/assets/img/thumbnail/smol.png"
 **Challenges Difficulty: Medium**  
 **Category: Privilege Escalation**
 
-## Walkthrough 
-
 ---
-
-
-
-### **Smol**
+## Initial Access
 
 ```bash
 wpscan --url [http://www.smol.thm](http://www.smol.thm/)

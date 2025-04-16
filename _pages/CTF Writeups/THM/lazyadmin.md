@@ -9,11 +9,10 @@ thumbnail: "/assets/img/thumbnail/lazy.png"
 # LazyAdmin
 ---
 **Challenges Difficulty: Easy**  
-**Category: Privilege Escalation**
-
-## Walkthrough 
+**Category: Privilege Escalation** 
 
 ---
+## Initial Access 
 As usual we will start with with nmap to scan the machine 
 ![image.png](/assets/img/posts/lazy/image%205.png)
 There is 2 open ports 22, 80 so let's open this webpage
@@ -37,6 +36,7 @@ browsing this site we can find a **Media Center** tab with a file upload
 ![alt text](/assets/img/posts/lazy/Screenshot_2.png)
 just upload a reverse shell and you will get a shell but remember to change the .php to .php5 or any other extension 
 ![image.png](/assets/img/posts/lazy/image%2013.png)
+## Privilege Escalation  
 Great we got initial access with a **www-data** now we need to escalate to root 
 checking our permissions we saw that there is a file that we can run as sudo 
 ![image.png](/assets/img/posts/lazy/image%2014.png)
