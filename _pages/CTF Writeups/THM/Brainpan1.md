@@ -46,7 +46,7 @@ After a looooooooooong time i realized that ncat has a max buffer size of 511 ðŸ
 
 letâ€™s use python
 
-```bash
+```python
 import socket
 
 # Target details
@@ -173,7 +173,7 @@ this bin gives us 3 commands that we can run
 3. manual 
 
 from [gtfobins](https://gtfobins.github.io/gtfobins/man/#sudo) we know that we can get a shell from man using
-```bash
+```
 !/bin/sh
 ```
 ![image.png](/assets/img/posts/Brainpan1/bin.png)
