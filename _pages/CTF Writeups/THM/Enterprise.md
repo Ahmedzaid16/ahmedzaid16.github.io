@@ -50,7 +50,7 @@ using hashcat we were able to crack it and get **bitbucket** creds
 using rdb we got into his desktop and found the first flag
 ![image.png](/assets/img/posts/Enterprise/image%2011.png)
 ## Privilege Escalation
-so we don't have much to to with tis user 
+so we don't have much to do with tis user 
 ![image.png](/assets/img/posts/Enterprise/image%2012.png)
 one of the ways to escalate window privilege is [**Unquoted Service Path**](https://www.rapid7.com/db/modules/exploit/windows/local/unquoted_service_path/) which is one of the easiest ways in my mind
 
