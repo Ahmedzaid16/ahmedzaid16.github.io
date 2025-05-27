@@ -6,7 +6,7 @@ thumbnail: "/assets/img/thumbnail/Brainpan1.png"
 
 ---
 
-# Brainpan 1
+# [Brainpan 1](https://tryhackme.com/room/brainpan)
 ---
 **Challenges Difficulty: Hard**  
 **Category: Revers**
@@ -33,7 +33,7 @@ so this is the one running on port 9999
 and this program takes one input from the user and returns **ACCESS DENIED** or **ACCESS GRANTED**
 ![image.png](/assets/img/posts/Brainpan1/image%2018.png)
 Friendly advice don't waste yore time to get the correct password as its actually just a printed string
-but as i have wasted my time :) so any string that starts with **s** will return **ACCESS GRANTED**
+but as i have wasted my time :) so if you sent the string **shitstorm** that will return **ACCESS GRANTED**
 ![alt text](/assets/img/posts/Brainpan1/access.png)
 actually this is the vulnerable part of the code as strcpy does not check bounds. so If input is longer than 520 bytes, it will overflow local_20c
 ![image.png](/assets/img/posts/Brainpan1/image%2021.png)
